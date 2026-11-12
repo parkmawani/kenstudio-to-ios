@@ -7,9 +7,17 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: xcode-27
     steps:
       - uses: actions/checkout@v4
+
+      - name: Select newest Xcode 27 (iPhone Duo needs iOS 27.1 SDK)
+        run: |
+          ls -d /Applications/Xcode*.app
+          XC=$(ls -d /Applications/Xcode_27*.app | grep -vi beta | sort -V | tail -1)
+          sudo xcode-select -s "$XC"
+          xcodebuild -version
+          xcodebuild -showsdks | grep iphoneos
 
       - name: Install XcodeGen
         run: brew install xcodegen

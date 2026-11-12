@@ -13,10 +13,12 @@ targets:
     info:
       path: KenStudio/Info.plist
       properties:
-        CFBundleDisplayName: Kenstudio
+        CFBundleDisplayName: KenStudio
         CFBundleShortVersionString: "1.0"
         CFBundleVersion: "1"
         UILaunchScreen: {}
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoadsInWebContent: true
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
     settings:

@@ -23,6 +23,8 @@ struct ShopWebView: UIViewRepresentable {
         config.websiteDataStore = .default()              // 로그인 쿠키 유지
         config.allowsInlineMediaPlayback = true
         config.preferences.javaScriptCanOpenWindowsAutomatically = true
+        // 일부 쇼핑몰은 "Safari"가 없는 기본 웹뷰 UA를 모바일 브라우저로 인식하지 못함
+        config.applicationNameForUserAgent = "Version/18.0 Mobile/15E148 Safari/604.1"
 
         let webView = WKWebView(frame: .zero, configuration: config)
         webView.navigationDelegate = context.coordinator
@@ -83,10 +85,41 @@ struct ShopWebView: UIViewRepresentable {
 
         func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
             webView.scrollView.refreshControl?.endRefreshing()
+            showError(error, in: webView)
         }
 
         func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
             webView.scrollView.refreshControl?.endRefreshing()
+            showError(error, in: webView)
+        }
+
+        // 웹 콘텐츠 프로세스가 죽으면 하얀 화면이 남으므로 다시 불러옴
+        func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
+            webView.reload()
+        }
+
+        // 로딩 실패를 하얀 화면 대신 화면에 표시 (원인 파악용)
+        private func showError(_ error: Error, in webView: WKWebView) {
+            let ns = error as NSError
+            if ns.domain == NSURLErrorDomain && ns.code == NSURLErrorCancelled { return }
+            if ns.domain == "WebKitErrorDomain" && ns.code == 102 { return } // 외부 앱으로 넘긴 링크
+            let failedURL = (ns.userInfo[NSURLErrorFailingURLStringErrorKey] as? String) ?? "(알 수 없음)"
+            let html = """
+            <html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+            <body style="font-family:-apple-system;padding:24px;color:#222">
+            <h3>페이지를 불러오지 못했어요</h3>
+            <p>\(escape(ns.localizedDescription))</p>
+            <p style="font-size:13px;color:#666">코드: \(escape(ns.domain)) \(ns.code)<br>주소: \(escape(failedURL))</p>
+            <p><a href="https://www.kenstudio.co.kr/">다시 시도</a></p>
+            </body></html>
+            """
+            webView.loadHTMLString(html, baseURL: nil)
+        }
+
+        private func escape(_ s: String) -> String {
+            s.replacingOccurrences(of: "&", with: "&amp;")
+             .replacingOccurrences(of: "<", with: "&lt;")
+             .replacingOccurrences(of: ">", with: "&gt;")
         }
 
         // MARK: JS alert / confirm / prompt

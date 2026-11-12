@@ -1,0 +1,1514 @@
+<script>/* [KS] 노트북 등 좁은 화면 자동 축소(전체 페이지 비율 유지) */
+(function(){var B=1820,last=0;function fit(){var z=Math.min(1,window.innerWidth/B);z=Math.round(z*1000)/1000;if(z===last)return;last=z;document.documentElement.style.zoom=(z<1?z:'');}
+fit();window.addEventListener('resize',fit);window.addEventListener('load',function(){fit();try{window.dispatchEvent(new Event('resize'))}catch(e){}});})();
+</script>
+<!doctype html>
+<html>
+<head>
+	 <meta name="naver-site-verification" content="ebd43350d7e18aa98838b093cd044b3ace8ee6ce" />
+    <title>켄스튜디오</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="켄스튜디오" />
+    <meta name="description" content="세련된 다크웨어를 추구하는 유니섹스 셀랙샵 입니다." />
+    <meta name="keywords" content="라우코하우스,그런지룩,딘스타일,저스트영,스트릿브랜드,빈세앙,빈세앙쇼핑몰.vinseiang,빈세앙스튜디오" />
+    <meta name="csrf-token" content="MTc5NDQ0OTk3NDI3MzIyMjk0NjA4NzQ4NTQwNDM0MjcwNjI3OTYxOTc3" />
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="켄스튜디오">
+    <meta property="og:url" content="https://www.kenstudio.co.kr/goods/goods_list.php?cateCd=001003">
+    <meta property="og:description" content="유니크한 블랙웨어는 켄스튜디오!">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="켄스튜디오">
+    <meta name="twitter:description" content="유니크한 블랙웨어는 켄스튜디오!">
+
+    <link rel="icon" href="/data/common/favicon.ico" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet"/>
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/ken2/css/reset.css?ts=1606296299">
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/ken2/css/common/common.css?ts=1606296299">
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/ken2/css/common/layer/layer.css?ts=1606296299">
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/ken2/css/layout/layout.css?ts=1606296299">
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/ken2/css/goods/list.css?ts=1606974116">
+	<link type="text/css" rel="stylesheet" href="/data/skin/front/ken2/css/button.css?ts=1606296299">
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/ken2/css/goods/goods.css?ts=1606296299" />
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/ken2/js/jquery/chosen/chosen.css?ts=1606296299" />
+    <link type="text/css" rel="stylesheet" href="/data/skin/front/ken2/css/custom.css?ts=1606296299" />
+
+
+    <script type="text/javascript">
+        var json_locale_data = {"domain":"messages","locale_data":{"messages":{"":{"lang":"ATF","plural-forms":"nplurals=1; plural=0"}}}}
+    </script>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/gd_gettext.js?ts=1606296299"></script>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/jquery/jquery.min.js?ts=1606296299"></script>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/underscore/underscore-min.js?ts=1606296299"></script>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/jquery/validation/jquery.validate.min.js?ts=1606296299"></script>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/jquery/validation/additional-methods.min.js?ts=1606296299"></script>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/numeral/numeral.min.js?ts=1606296299"></script>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/global/accounting.min.js?ts=1606296299"></script>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/global/money.min.js?ts=1606296299"></script>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/jquery/chosen/chosen.jquery.min.js?ts=1606296299"></script>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/jquery/placeholder/placeholders.jquery.min.js?ts=1606296299"></script>
+    <![if gt IE 8]>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/copyclipboard/clipboard.min.js?ts=1606296299"></script>
+    <![endif]>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/jquery/vticker/jquery.vticker.js?ts=1606296299"></script>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/gd_ui.js?ts=1606296299"></script>
+
+    <script type="text/javascript">
+        // 고도몰5 통화정책
+        var gdCurrencyDecimal = 0;
+        var gdCurrencyDecimalFormat = '0';
+        var gdCurrencyCode = 'KRW';
+        var gdCurrencyAddDecimal = 0;
+        var gdCurrencyAddDecimalFormat = '';
+        var gdCurrencyAddCode = '';
+        var gdLocale = 'ko';
+        var gdCurrencySymbol = '';
+        var gdCurrencyString = '원';
+
+        // 환율변환 정책
+        fx.base = "KRW";
+        fx.settings = {
+            from : "KRW",
+            to : gdCurrencyCode
+        };
+        fx.rates = {
+            "KRW" : 1,
+            "USD" : 0.001,
+            "CNY" : 0.010,
+            "JPY" : 0.100,
+            "EUR" : 0.001,
+        }
+    </script>
+	
+	
+<script src="http://wwww.mariendesign.com/web/upload/mromi/js/romi_join.js"></script> 
+
+    <script type="text/javascript" src="/data/skin/front/ken2/js/gd_common.js?ts=1606296299"></script>
+
+    <!-- Add script : start -->
+    <script type="text/javascript" src="/admin/gd_share/script/visit/gd_visit.js?requestUrl=https%3A%2F%2Fcollector-statistics.nhn-commerce.com%2Fhttp.msg&requestData=%7B%22base_time%22%3A%222026-11-12T11%3A19%3A34%2B09%3A00%22%2C%22mall_id%22%3A%22690201%22%2C%22user_id%22%3Anull%2C%22refer%22%3A%22%22%2C%22uri%22%3A%22https%3A%5C%2F%5C%2Fwww.kenstudio.co.kr%3A443%5C%2Fgoods%5C%2Fgoods_list.php%3FcateCd%3D001003%22%2C%22domain%22%3A%22www.kenstudio.co.kr%22%2C%22country%22%3A%22kr%22%2C%22solution%22%3A%22G5%22%2C%22session_key%22%3A%2233305b7bd8f25891089436ac063846dd%22%2C%22tracking_key%22%3A%22%22%2C%22analytics_client_id%22%3A%2201a1cd8d-a59e-7212-99e5-39c5f600cd4b%22%2C%22analytics_session_id%22%3A%2201a1cd8d-a59e-7242-ad4f-67c337b4b41d%22%7D&dummyData="></script>
+    <script type="text/javascript" src="/data/skin/front/ken2/js/jquery/jquery-cookie/jquery.cookie.js"></script>
+    <!-- Add script : end -->
+
+    
+
+    <style type="text/css">
+        body {
+        }
+
+        /* body > #wrap > #header_warp : 상단 영역 */
+        #header_warp {
+        }
+
+        /* body > #wrap > #container : 메인 영역 */
+        #container {
+        }
+
+        /* body > #wrap > #footer_wrap : 하단 영역 */
+        #footer_wrap {
+        }
+    </style>
+
+    <script src="https://godomall-storage.cdn-nhncommerce.com/godomall-sdk/0.3.2/godomall-sdk.js" onload="GodomallSDK.setup('BnNWXYSJO2UqMWLtPU+ttA==', 'H1BACBW4hDq6wxOtR8VatcTP9ShOZgR6BYDbHLwjJ6mxe0BBUBNvGEm9lL9tbFof')"></script><meta name="facebook-domain-verification" content="2tvk8h447kunmt3boildw2o4nh1emj" /><!-- Facebook Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '562725935523036', {}, {'agent':'plgodo'});
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=562725935523036&ev=PageView&noscript=1"/></noscript>
+        <!-- DO NOT MODIFY -->
+        <!-- End Facebook Pixel Code -->
+        <style>
+            .item_photo_box {position:relative; overflow:hidden; margin:auto;}
+            .item_photo_box a {overflow:hidden;}
+            .item_photo_box a>img { border:none !important;}
+            .item_photo_box-wrap {position:absolute;}
+            .type-tab-listgroup li .item_photo_box {padding:0; margin:0 20px 0 0;}
+        </style>
+        <script type="text/javascript">
+            <!--
+            var listMouseoverOri = {};
+            var listMouseoverEffect = '';
+            var listMouseoverSpeed = '';
+            var listMouseoverWidth = '';
+            var listMouseoverHeight = '';
+        
+            $(document).ready(function () {
+                
+                var usedLazyLoad = 'n';
+
+                $(document).on('mouseenter', '.item_photo_box', function (e) {
+                    e.preventDefault();
+
+                    if (usedLazyLoad == 'y') {
+                        if (typeof lazyloadImageDefault !== 'undefined') {
+                            if ($(this).find('img:eq(0)').prop('src') == lazyloadImageDefault) {
+                                return;
+                            }
+                        }
+                    }
+
+                    var idx = $('.item_photo_box').index(this);
+
+                    listMouseoverOri = {
+                        idx: idx,
+                        html: $(this).html(),
+                        style: $(this).attr('style'),
+                        src: $(this).find('img:eq(0)').prop('src')
+                    };
+                    listMouseoverEffect = 'fade';
+                    listMouseoverSpeed = 500;
+                    listMouseoverWidth = $(this).find('img:eq(0)').width();
+                    listMouseoverHeight = $(this).height();
+                    goodsImgUrl = $(this).data('image-add2');
+
+                    if (goodsImgUrl) {
+                        overEvent(listMouseoverOri.idx, goodsImgUrl, listMouseoverEffect, listMouseoverSpeed, listMouseoverWidth, listMouseoverHeight);                            
+                    }
+                });
+                $(document).on('mouseleave', '.item_photo_box', function (e) {
+                    e.preventDefault();
+                    if (listMouseoverOri.idx >= 0) {
+                        oriChange();
+                    }
+                });
+                function overEvent(idx, goodsImgUrl, effect, speed, width, height) {
+                    var $this = $('.item_photo_box').eq(idx);
+                    var opacity = '1.0';
+                    if ($this.find('a img:eq(0)').css('opacity')) opacity = $this.find('a img:eq(0)').css('opacity');
+                    
+                    $this.css({
+                        width: width + 'px',
+                        height: height + 'px'
+                    });
+                    if ($this.find('.choice').length > 0) {
+                        $this.find('.choice').css({'zIndex': '20'});
+                    }
+        
+                    switch (effect) {
+                        case 'slide':                       
+                            var outerHeight = $this.outerHeight() - (parseInt($this.css("border-top-width"),10)+parseInt($this.css("border-bottom-width"),10));  //아웃라인에 보더값 있을 경우 빼줌,안그럴경우 top 시작점 어긋남
+                            var topHeight = outerHeight != $this.find('a img:eq(0)').height() ? (outerHeight - $this.find('a img:eq(0)').height()) / 2 + 'px' : 0;                            
+                            
+                            if (topHeight != 0) {
+                                $this.css({
+                                    display: 'block'
+                                });
+                            }
+                            
+                            //보더값 있는 경우 전체 넓이 여유분 줄임
+                            if(parseInt($this.css("border-left-width"),10) > 0) {
+                                totalWidth = (width * 2) + 1;
+                            } else {
+                                totalWidth = (width * 2) + 6;
+                            }
+                                                        
+                            $this.find('a').css({
+                                'width': totalWidth + 'px',
+                                'height': 'inherit',
+                                'position': 'absolute',
+                                'top': topHeight,
+                                'left': 0,
+                            });
+                            $this.find('a img:eq(0)').after('<img src="' + goodsImgUrl + '" width="' + width + '" style="opacity:' + opacity + '">');
+                            $this.find('a').stop().animate({'left':'-' + width + 'px'}, speed);
+                            if ($this.find('.item_soldout_bg').length > 0) {
+                                $this.find('.item_soldout_bg').css('width', width + 'px').stop().animate({'left': width + 'px'}, speed);
+                            }
+                            if ($this.find('.item_simple_over').length > 0) {
+                                $this.find('.item_simple_over').css('width', width + 'px').stop().animate({'left': width + 'px'}, speed);
+                            }
+                            if ($this.find('.choice').length > 0) {
+                                $this.find('.choice').css({'width': width + 'px'}).stop().animate({'left': width + 'px'}, speed);
+                            }
+                            if ($this.find('.icon_time_sale').length > 0) {
+                                $this.find('.icon_time_sale').css({'width': width + 'px'}).stop().animate({'left': width + 'px'}, speed);
+                            }
+                            break;
+                        case 'fade':
+                            $this.find('a').css('width', width + 'px');
+                            $this.find('a img:eq(0)').after('<img src="' + goodsImgUrl + '" width="' + width + '" style="position:absolute; top:0; left:0; opacity:0.0">');
+                            $this.find('img:eq(0)').stop().animate({'opacity': '0.0'}, speed);
+                            $this.find('img:eq(1)').stop().animate({'opacity': opacity}, speed);
+                            break;
+                        case 'zoom':
+                            $this.find('a').css('width', width + 'px');
+                            $this.find('a img:eq(0)').after('<img src="' + goodsImgUrl + '" style="position:absolute; top:0; left:0; width:' + width + 'px;">');
+                            $this.find('img:eq(0)').animate({'opacity': '0.0'}, 100);
+                            $this.find('img:eq(1)').stop().animate({'width': (width + (width * 0.1)) + 'px', 'top': '-5%', 'left': '-5%', 'opacity': opacity}, speed);
+                            break;
+                    }
+                }
+            });
+            
+            function oriChange() {
+                var defaultStyle = typeof listMouseoverOri.style != 'undefined' ? listMouseoverOri.style : '';
+                $('.item_photo_box').eq(listMouseoverOri.idx).html(listMouseoverOri.html).attr('style', defaultStyle);
+                listMouseoverOri = {};
+            }
+            //-->
+        </script>
+    
+
+</head>
+
+<body class="body"> 
+	
+	
+<div class="top_area"></div>
+<div id="wrap">
+
+    <div id="header_warp">
+
+    </div>
+    <!-- //header_warp -->
+
+    <div id="container">
+        <div id="contents">
+        <!-- 본문 시작 -->
+
+            <!-- //location_wrap -->
+
+            <div class="sub_content">
+
+                <!-- //side_cont -->
+<div class="content">
+   
+ 
+
+    <div class="goods_list_item">
+
+        <div class="goods_list_item_tit">
+            <h2>all</h2>
+        </div>
+        <div class="list_item_category">
+            <ul>
+                <li class="on">
+                    <a href="?cateCd=001003"><span>all <em>(900)</em></span></a>
+                </li>
+                <li class="">
+                    <a href="?cateCd=001004"><span>best item <em>(899)</em></span></a>
+                </li>
+                <li class="">
+                    <a href="?cateCd=001001"><span>outer <em>(197)</em></span></a>
+                </li>
+                <li class="">
+                    <a href="?cateCd=001002"><span>top & shirt <em>(443)</em></span></a>
+                </li>
+                <li class="">
+                    <a href="?cateCd=001005"><span>bottom & skirt <em>(237)</em></span></a>
+                </li>
+                <li class="">
+                    <a href="?cateCd=001006"><span>bag & acc <em>(58)</em></span></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 설문조사 배너 --><!-- 설문조사 배너 -->
+
+
+    
+
+        <div class="goods_list">
+            <div class="goods_list_cont">
+                <!-- 상품 리스트 -->
+<div class="item_gallery_type">
+    <ul>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001625/image/add1/1000001625_add1_033.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001625/image/add2/1000001625_add2_025.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001625/image/add3/1000001625_add3_092.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001625/image/list/1000001625_list_058.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001625/image/main/1000001625_main_028.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001625/image/detail/1000001625_detail_025.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001625/image/magnify/1000001625_magnify_049.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001625" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001625/image/add1/1000001625_add1_033.jpg" width="500" height="643" alt="Hooded Cropped Duck Down Puffer Jacket" title="Hooded Cropped Duck Down Puffer Jacket" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/그레이-3.png"  alt="그레이" title="그레이" class="middle"  /> <img  src="/data/icon/goods_icon/블랙-3.png"  alt="블랙" title="블랙" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001625">
+                            <strong class="item_name">Hooded Cropped Duck Down Puffer Jacket</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            92,800원 <br />
+                            <span class='time_sale_cost'>88,160원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001624/image/add1/1000001624_add1_01.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001624/image/add2/1000001624_add2_077.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001624/image/add3/1000001624_add3_054.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001624/image/list/1000001624_list_075.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001624/image/main/1000001624_main_062.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001624/image/detail/1000001624_detail_061.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001624/image/magnify/1000001624_magnify_026.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001624" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001624/image/add1/1000001624_add1_01.jpg" width="500" height="643" alt="Stand Collar Belted Long Wool Coat" title="Stand Collar Belted Long Wool Coat" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/그레이-3.png"  alt="그레이" title="그레이" class="middle"  /> <img  src="/data/icon/goods_icon/블랙-3.png"  alt="블랙" title="블랙" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001624">
+                            <strong class="item_name">Stand Collar Belted Long Wool Coat</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            118,000원 <br />
+                            <span class='time_sale_cost'>112,100원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001623/image/add1/1000001623_add1_056.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001623/image/add2/1000001623_add2_064.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001623/image/add3/1000001623_add3_069.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001623/image/list/1000001623_list_053.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001623/image/main/1000001623_main_046.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001623/image/detail/1000001623_detail_0100.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001623/image/magnify/1000001623_magnify_096.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001623" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001623/image/add1/1000001623_add1_056.jpg" width="500" height="643" alt="Stand Collar Belted Wool Jacket" title="Stand Collar Belted Wool Jacket" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/그레이-3.png"  alt="그레이" title="그레이" class="middle"  /> <img  src="/data/icon/goods_icon/블랙-3.png"  alt="블랙" title="블랙" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001623">
+                            <strong class="item_name">Stand Collar Belted Wool Jacket</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            92,800원 <br />
+                            <span class='time_sale_cost'>88,160원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001622/image/add1/1000001622_add1_029.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001622/image/add2/1000001622_add2_094.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001622/image/add3/1000001622_add3_021.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001622/image/list/1000001622_list_026.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001622/image/main/1000001622_main_021.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001622/image/detail/1000001622_detail_097.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001622/image/magnify/1000001622_magnify_013.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001622" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001622/image/add1/1000001622_add1_029.jpg" width="500" height="643" alt="Wool Blend Balloon Wide Pants" title="Wool Blend Balloon Wide Pants" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/브라운.png"  alt="브라운" title="브라운" class="middle"  /> <img  src="/data/icon/goods_icon/그레이-3.png"  alt="그레이" title="그레이" class="middle"  /> <img  src="/data/icon/goods_icon/블랙-3.png"  alt="블랙" title="블랙" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001622">
+                            <strong class="item_name">Wool Blend Balloon Wide Pants</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            65,800원 <br />
+                            <span class='time_sale_cost'>62,510원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001621/image/add1/1000001621_add1_078.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001621/image/add2/1000001621_add2_068.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001621/image/add3/1000001621_add3_038.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001621/image/list/1000001621_list_032.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001621/image/main/1000001621_main_071.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001621/image/detail/1000001621_detail_0100.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001621/image/magnify/1000001621_magnify_04.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001621" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001621/image/add1/1000001621_add1_078.jpg" width="500" height="643" alt="Deconstructed Shawl Collar Belted Jacket" title="Deconstructed Shawl Collar Belted Jacket" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/브라운.png"  alt="브라운" title="브라운" class="middle"  /> <img  src="/data/icon/goods_icon/그레이-3.png"  alt="그레이" title="그레이" class="middle"  /> <img  src="/data/icon/goods_icon/블랙-3.png"  alt="블랙" title="블랙" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001621">
+                            <strong class="item_name">Deconstructed Shawl Collar Belted Jacket</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            68,800원 <br />
+                            <span class='time_sale_cost'>65,360원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001620/image/add1/1000001620_add1_082.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001620/image/add2/1000001620_add2_090.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001620/image/add3/1000001620_add3_094.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001620/image/list/1000001620_list_088.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001620/image/main/1000001620_main_08.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001620/image/detail/1000001620_detail_085.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001620/image/magnify/1000001620_magnify_065.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001620" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001620/image/add1/1000001620_add1_082.jpg" width="500" height="643" alt="Vintage Belted Stand Collar Leather Jacket" title="Vintage Belted Stand Collar Leather Jacket" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/브라운.png"  alt="브라운" title="브라운" class="middle"  /> <img  src="/data/icon/goods_icon/블랙-3.png"  alt="블랙" title="블랙" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001620">
+                            <strong class="item_name">Vintage Belted Stand Collar Leather Jacket</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            89,800원 <br />
+                            <span class='time_sale_cost'>85,310원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001619/image/add1/1000001619_add1_015.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001619/image/add2/1000001619_add2_091.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001619/image/add3/1000001619_add3_059.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001619/image/list/1000001619_list_026.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001619/image/main/1000001619_main_072.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001619/image/detail/1000001619_detail_065.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001619/image/magnify/1000001619_magnify_038.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001619" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001619/image/add1/1000001619_add1_015.jpg" width="500" height="643" alt="Asymmetric Button Turtleneck Brushed Top" title="Asymmetric Button Turtleneck Brushed Top" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/그레이-3.png"  alt="그레이" title="그레이" class="middle"  /> <img  src="/data/icon/goods_icon/블랙-3.png"  alt="블랙" title="블랙" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001619">
+                            <strong class="item_name">Asymmetric Button Turtleneck Brushed Top</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            53,800원 <br />
+                            <span class='time_sale_cost'>51,110원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001618/image/add1/1000001618_add1_011.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001618/image/add2/1000001618_add2_083.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001618/image/add3/1000001618_add3_0100.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001618/image/list/1000001618_list_099.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001618/image/main/1000001618_main_07.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001618/image/detail/1000001618_detail_086.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001618/image/magnify/1000001618_magnify_066.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001618" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001618/image/add1/1000001618_add1_011.jpg" width="500" height="643" alt="Hooded Half Button Wool Blend Knit" title="Hooded Half Button Wool Blend Knit" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/베이지-3.png"  alt="베이지" title="베이지" class="middle"  /> <img  src="/data/icon/goods_icon/그레이-3.png"  alt="그레이" title="그레이" class="middle"  /> <img  src="/data/icon/goods_icon/블랙-3.png"  alt="블랙" title="블랙" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001618">
+                            <strong class="item_name">Hooded Half Button Wool Blend Knit</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            58,800원 <br />
+                            <span class='time_sale_cost'>55,860원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001617/image/add1/1000001617_add1_09.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001617/image/add2/1000001617_add2_010.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001617/image/add3/1000001617_add3_012.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001617/image/list/1000001617_list_094.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001617/image/main/1000001617_main_031.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001617/image/detail/1000001617_detail_011.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001617/image/magnify/1000001617_magnify_067.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001617" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001617/image/add1/1000001617_add1_09.jpg" width="500" height="643" alt="Cross Stand Collar Double Breasted Long Coat" title="Cross Stand Collar Double Breasted Long Coat" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/브라운.png"  alt="브라운" title="브라운" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001617">
+                            <strong class="item_name">Cross Stand Collar Double Breasted Long Coat</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            89,800원 <br />
+                            <span class='time_sale_cost'>85,310원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001616/image/add1/1000001616_add1_081.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001616/image/add2/1000001616_add2_028.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001616/image/add3/1000001616_add3_038.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001616/image/list/1000001616_list_097.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001616/image/main/1000001616_main_069.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001616/image/detail/1000001616_detail_074.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001616/image/magnify/1000001616_magnify_089.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001616" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001616/image/add1/1000001616_add1_081.jpg" width="500" height="643" alt="Braided Tassel Wool Blend Scarf" title="Braided Tassel Wool Blend Scarf" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/브라운.png"  alt="브라운" title="브라운" class="middle"  /> <img  src="/data/icon/goods_icon/베이지-3.png"  alt="베이지" title="베이지" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001616">
+                            <strong class="item_name">Braided Tassel Wool Blend Scarf</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            41,800원 <br />
+                            <span class='time_sale_cost'>39,710원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001615/image/add1/1000001615_add1_051.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001615/image/add2/1000001615_add2_088.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001615/image/add3/1000001615_add3_072.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001615/image/list/1000001615_list_029.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001615/image/main/1000001615_main_014.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001615/image/detail/1000001615_detail_021.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001615/image/magnify/1000001615_magnify_066.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001615" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001615/image/add1/1000001615_add1_051.jpg" width="500" height="643" alt="Distressed Fringe Wool Knit Scarf" title="Distressed Fringe Wool Knit Scarf" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/화이트2.png"  alt="화이트" title="화이트" class="middle"  /> <img  src="/data/icon/goods_icon/그레이-3.png"  alt="그레이" title="그레이" class="middle"  /> <img  src="/data/icon/goods_icon/블랙-3.png"  alt="블랙" title="블랙" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001615">
+                            <strong class="item_name">Distressed Fringe Wool Knit Scarf</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            31,500원 <br />
+                            <span class='time_sale_cost'>29,925원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001614/image/add1/1000001614_add1_014.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001614/image/add2/1000001614_add2_014.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001614/image/add3/1000001614_add3_058.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001614/image/list/1000001614_list_079.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001614/image/main/1000001614_main_053.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001614/image/detail/1000001614_detail_087.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001614/image/magnify/1000001614_magnify_032.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001614" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001614/image/add1/1000001614_add1_014.jpg" width="500" height="643" alt="Drawstring Funnel Neck Melange Top" title="Drawstring Funnel Neck Melange Top" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/라이트그레이-3.png"  alt="라이트그레이" title="라이트그레이" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001614">
+                            <strong class="item_name">Drawstring Funnel Neck Melange Top</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            62,800원 <br />
+                            <span class='time_sale_cost'>59,660원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001613/image/add1/1000001613_add1_095.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001613/image/add2/1000001613_add2_074.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001613/image/add3/1000001613_add3_080.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001613/image/list/1000001613_list_030.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001613/image/main/1000001613_main_09.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001613/image/detail/1000001613_detail_074.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001613/image/magnify/1000001613_magnify_091.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001613" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001613/image/add1/1000001613_add1_095.jpg" width="500" height="643" alt="Corduroy Shearling Lined Jacket" title="Corduroy Shearling Lined Jacket" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/브라운.png"  alt="브라운" title="브라운" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001613">
+                            <strong class="item_name">Corduroy Shearling Lined Jacket</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            108,000원 <br />
+                            <span class='time_sale_cost'>102,600원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001612/image/add1/1000001612_add1_059.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001612/image/add2/1000001612_add2_028.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001612/image/add3/1000001612_add3_069.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001612/image/list/1000001612_list_014.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001612/image/main/1000001612_main_082.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001612/image/detail/1000001612_detail_01.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001612/image/magnify/1000001612_magnify_090.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001612" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001612/image/add1/1000001612_add1_059.jpg" width="500" height="643" alt="Draped Stand Collar Padded Vest" title="Draped Stand Collar Padded Vest" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/블랙-3.png"  alt="블랙" title="블랙" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001612">
+                            <strong class="item_name">Draped Stand Collar Padded Vest</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            80,800원 <br />
+                            <span class='time_sale_cost'>76,760원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+        <li  style="width:33.333333333333%;">
+            <div class="item_cont">
+                <div class="item_photo_box" data-image-add1 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001611/image/add1/1000001611_add1_051.jpg" data-image-add2 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001611/image/add2/1000001611_add2_04.jpg" data-image-add3 = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001611/image/add3/1000001611_add3_037.jpg" data-image-list = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001611/image/list/1000001611_list_041.jpg" data-image-main = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001611/image/main/1000001611_main_087.jpg" data-image-detail = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001611/image/detail/1000001611_detail_015.jpg" data-image-magnify = "https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001611/image/magnify/1000001611_magnify_086.jpg">
+                    <a href="../goods/goods_view.php?goodsNo=1000001611" >
+                        <img  src="https://godomall-storage.cdn-nhncommerce.com/839ab2ed6a6451912eecf14ae3f3f795/goods/1000001611/image/add1/1000001611_add1_051.jpg" width="500" height="643" alt="Wool Blend Waffle Turtleneck Knit" title="Wool Blend Waffle Turtleneck Knit" class="middle"  />
+                        <span class="icon_time_sale"><img src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/icon/goods_icon/icon_time_sale.png" alt="타임세일" /></span>
+                    </a>
+                </div>
+                <!-- //item_photo_box -->
+                <div class="item_info_cont">
+                    <div class="item_icon_box">
+                        <img  src="/data/icon/goods_icon/블랙-3.png"  alt="블랙" title="블랙" class="middle"  /> 
+                    </div>
+                    <!-- //item_icon_box -->
+                    <div class="item_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo=1000001611">
+                            <strong class="item_name">Wool Blend Waffle Turtleneck Knit</strong>
+                        </a>
+                    </div>
+                    <!-- //item_tit_box -->
+                    <div class="item_money_box">
+                        <strong class="item_price">
+                            62,800원 <br />
+                            <span class='time_sale_cost'>59,660원 </span>
+                        </strong>
+                    </div>
+                    <!-- //item_money_box -->
+                    <!-- //item_number_box -->
+                </div>
+                <!-- //item_info_cont -->
+            </div>
+            <!-- //item_cont -->
+        </li>
+    </ul>
+</div>
+<!-- //item_gallery_type -->
+                <!-- //상품 리스트 -->
+            </div>
+        </div>
+
+        <div class="pagination">
+            <div class="pagination"><ul><li class="on"><span>1</span></li><li><a href="./goods_list.php?page=2&amp;cateCd=001003">2</a></li><li><a href="./goods_list.php?page=3&amp;cateCd=001003">3</a></li><li><a href="./goods_list.php?page=4&amp;cateCd=001003">4</a></li><li><a href="./goods_list.php?page=5&amp;cateCd=001003">5</a></li><li><a href="./goods_list.php?page=6&amp;cateCd=001003">6</a></li><li><a href="./goods_list.php?page=7&amp;cateCd=001003">7</a></li><li><a href="./goods_list.php?page=8&amp;cateCd=001003">8</a></li><li><a href="./goods_list.php?page=9&amp;cateCd=001003">9</a></li><li><a href="./goods_list.php?page=10&amp;cateCd=001003">10</a></li><li class="btn_page btn_page_next"><a aria-label="Next" href="./goods_list.php?page=11&amp;cateCd=001003"><img src=/admin/gd_share/img/icon_arrow_page_r.png class=img-page-arrow>다음</a></li><li class="btn_page btn_page_last"><a aria-label="Last" href="./goods_list.php?page=60&amp;cateCd=001003"><img src=/admin/gd_share/img/icon_arrow_page_rr.png class=img-page-arrow>맨뒤</a></li></ul></div>
+        </div>
+
+    </div>
+    <!-- //goods_list_item -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$('form[name=frmList] select[name=pageNum]').change(function() {
+				$('form[name=frmList]').get(0).submit();
+			});
+
+			$('form[name=frmList] input[name=sort]').click(function() {
+				$('form[name=frmList]').get(0).submit();
+			});
+
+			$(':radio[name="sort"][value=""]').prop("checked","checked")
+			$(':radio[name="sort"][value=""]').next().addClass('on');
+
+		});
+	</script>
+</div>
+<!-- //content -->
+
+    <div id="footer_wrap">
+<div class="bottom">
+	
+	  <div class="utilMenu">
+               
+                    <ul>
+<li><a href="../service/company.ph">ABOUT US</a></li>
+                        <li><a href="../service/agreement.php">AGREEMENT</a></li>
+                        <li><a href="../service/guide.php">GUIDE</a></li>
+						<li class="privacy"><a href="../service/private.php" class="privacy">PRIVACY POLICE</a></li> 
+                 
+                        
+                    </ul>
+</div>
+	
+	
+<div class="xans-element- xans-layout xans-layout-footer "><div class="shop_info">
+              
+              
+        
+                <div class="address">
+                   
+                    <p>
+                        <span class="title">COMPANY</span> <span>에단스컴퍼니</span>
+                        <span class="title">OWNER</span> <span>권순영</span> 
+				 
+                       
+						       <span class="title">ADRESS</span> <span>서울특별시 금천구 두산로9길 85(가산동) 유원블리스 405</span>  
+                    </p>
+                    
+                    <p>
+                        <span class="title">BUSINESS-LICENSE</span> <span>445-53-00422</span>
+                        <span class="title">MAIL ORDER BUSINESS</span> <span>2023-서울관악-1545 <a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank">[사업자정보확인]</a></span>
+						      <span class="title">PRIVACY OFFICER</span> <span><a href="mailto:ken_studio@naver.com"><span class="email">(ken_studio@naver.com)</span></a></span>    
+						  <span class="title">RETURN ADDRESS</span> <span>서울특별시 금천구 두산로9길 85(가산동) 유원블리스 405</span>  
+						
+                    </p>          
+                    <p>
+                                       
+                    </p>   
+					
+				    <p>
+                      
+                    </p>
+					
+					
+                    <p class="copyright">copyright © 에단스컴퍼니 all rights reserved.</p>
+                    <p class="footer_banner">
+                        
+                   
+                        &nbsp;<img width="130" alt="SSL 결제보안" src="http://img.echosting.cafe24.com/design/common/bn_ssl.gif">
+                    &nbsp;</p>
+                </div>
+            </div>
+
+</div>
+	
+</div>
+
+<!-- //footer -->
+    </div>
+    <!-- //footer_wrap --> 
+             
+            </div>
+            <!-- //sub_content -->
+            
+            
+  
+        </div>
+        <!-- //본문 끝 contents -->
+    </div>
+    <!-- //container -->
+
+
+
+    <div class="scroll_wrap">
+
+        <!-- 좌측 스크롤 배너 -->
+        <div id="scroll_left">
+<div id="left">
+  <div style="margin:0 0 0 5px;"><a href="../main/index.php" ><img  src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/banner/83d91114e8d190048ce49df15a3dd7b5_71211.png"  alt="상단로고" title="상단로고"   /></a></div> 
+	
+   <div class="header_top">
+        <div class="header_top_cont">
+
+                
+
+            <ul class="top_member_box">
+                <li><a href="../member/login.php">LOGIN</a></li>
+                <li><a href="../member/join_method.php">JOIN</a>
+           
+<div class="icon_wrap" module="Layout_statelogoff">
+
+    
+
+
+</div>              
+
+					
+				
+                </li>
+                <li>
+                   <a href="../mypage/index.php">MYPAGE</a>
+                </li>
+                <li><a href="/order/cart.php">CART</a></li>
+            <li><script type="text/javascript">//<![CDATA[
+$(function () {
+$("#bookmark").click(function(e) {
+e.preventDefault();
+var bookmarkURL ="http://rhksdnrdl.godomall.com";
+var bookmarkTitle = "브런치";
+var triggerDefault = false;
+if (window.sidebar && window.sidebar.addPanel) {
+window.sidebar.addPanel(bookmarkTitle, bookmarkURL, "");
+} else if ((window.sidebar && (navigator.userAgent.toLowerCase().indexOf("firefox") > -1)) || (window.opera && window.print)) {
+$(this).attr("href", bookmarkURL).attr("title", bookmarkTitle).attr("rel", "sidebar").off(e);
+triggerDefault = true;
+} else if (window.external && ("AddFavorite" in window.external)) { 
+window.external.AddFavorite(bookmarkURL, bookmarkTitle);
+} else { alert((navigator.userAgent.toLowerCase().indexOf("mac") != -1 ? "Cmd" : "Ctrl") + "+D 키를 눌러 즐겨찾기에 등록하실 수 있습니다."); }
+});
+});
+
+//]]></script>
+
+<a href="#" id="bookmark">FAVORITE</a></li>
+				
+            </ul>
+			
+		
+			
+			
+			
+
+			
+			
+        </div>
+        <!-- //header_top_cont -->
+    </div>
+    <!-- //header_top -->
+	
+	
+	
+	
+
+	
+
+
+
+		<div class="lnb">
+			
+    <!-- 사이드 카테고리 시작 -->
+    <h2 class="dn">사이드 카테고리</h2>
+    <div class="sub_menu_box layer_type"><!-- N : 레이어 타입 : layer_type 추가, 트리형 타입 tree_type 추가 -->
+    <ul class="sub_depth0 sub_menu0">
+        <li  class='group_tit'>
+            <img src='https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/category/011_cateImg_goods.png' alt='-Unisex-'>
+        </li>
+        <li >
+            <a href="../goods/goods_list.php?cateCd=001" >　SHOP</a>
+            <ul class="sub_depth1">
+                <li >
+                <a href="../goods/goods_list.php?cateCd=001003" >all</a>
+                </li>
+                <li >
+                <a href="../goods/goods_list.php?cateCd=001004" >best item</a>
+                </li>
+                <li >
+                <a href="../goods/goods_list.php?cateCd=001001" >outer</a>
+                </li>
+                <li >
+                <a href="../goods/goods_list.php?cateCd=001002" >top & shirt</a>
+                </li>
+                <li >
+                <a href="../goods/goods_list.php?cateCd=001005" >bottom & skirt</a>
+                </li>
+                <li >
+                <a href="../goods/goods_list.php?cateCd=001006" >bag & acc</a>
+                </li>
+            </ul>
+        </li>
+        <li  class='group_tit'>
+            <img src='https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/category/010_cateImg_goods.png' alt='-Women\'s-'>
+        </li>
+        <li >
+            <a href="../goods/goods_list.php?cateCd=012" >　SHOP</a>
+            <ul class="sub_depth1">
+                <li >
+                <a href="../goods/goods_list.php?cateCd=012001" >all</a>
+                </li>
+                <li >
+                <a href="../goods/goods_list.php?cateCd=012002" >best item</a>
+                </li>
+                <li >
+                <a href="../goods/goods_list.php?cateCd=012003" >outer</a>
+                </li>
+                <li >
+                <a href="../goods/goods_list.php?cateCd=012004" >top & shirt</a>
+                </li>
+                <li >
+                <a href="../goods/goods_list.php?cateCd=012005" >bottom & skirt</a>
+                </li>
+                <li >
+                <a href="../goods/goods_list.php?cateCd=012007" >bag & acc</a>
+                </li>
+            </ul>
+        </li>
+        <li  class='group_tit'>
+            　
+        </li>
+    </ul>
+</div>
+<!-- //sub_menu_box -->
+    <!-- 사이드 카테고리 끝 -->
+</div>
+	
+<div class="board">
+	
+	       <ul>
+            
+               <li><a href="/board/list.php?bdId=notice">NOTICE</a></li>
+               <li><a href="/board/list.php?bdId=goodsreview">REVIEW</a></li>
+               <li><a href="/board/list.php?bdId=goodsqa">Q & A</a></li>
+		       <li><a href="/board/list.php?bdId=event">EVENT</a></li>
+		       <li><a href="/board/list.php?bdId=delivery ">DELIVERY</a></li>
+
+	
+            </ul>
+	
+	</div>
+
+<div class="head">
+
+	<div style="float:left;clear:both;margin:50px 0 0 10px;letter-spacing:1px;"> SEARCH</div>
+        <!-- 검색 폼 -->
+	  
+        <div class="top_search">
+    <form name="frmSearchTop" id="frmSearchTop" action="../goods/goods_search.php" method="get">
+        <fieldset>
+            <legend>검색폼</legend>
+            <div class="top_search_cont">
+                <div class="top_text_cont">
+                    <input type="text" id="search_form" name="keyword" class="top_srarch_text" title=""  placeholder="" autocomplete="off">
+                    <input type="image" src="/data/skin/front/ken2/img/common/btn/btn_top_search.png" id="btnSearchTop" class="btn_top_srarch" title="검색" value="검색" alt="검색">
+                </div>
+                <!-- //top_text_cont -->
+            
+                <!-- //search_cont -->
+                
+            </div>
+            <!-- //top_search_cont -->
+        </fieldset>
+    </form>
+</div>
+<!-- //top_search -->
+        <!-- 검색 폼 -->
+
+   
+
+</div>
+
+	
+	     <div class="mall_info"> 
+                    <div class="customer">
+                       <h3>CUSTOMER CENTER</h3>
+<p class="num">T.010-5645-6523</p>
+<p>오전 10:00 ~ 오후 18:00<br />
+주말/법정 휴일 휴무<br />
+원활한 업무 진행을 위해 유선 상담은 진행하지 않습니다.<br />
+홈페이지 문의게시판 이용시 빠른 답변 드리겠습니다.</p>
+
+                    </div>
+                    <div class="bank">
+                        <h3>BANK ACCOUNT</h3>
+
+<p>국민은행 55910104177212 </p>
+
+<p class="name">예금주 :  권순영</p>
+                    </div>
+                </div>
+	
+	
+	<div class="sns">
+	
+	       <ul>
+            
+                <li>
+                   <a href="/board/list.php?bdId=notice"><a href="https://www.instagram.com/kenstudio.co.kr" ><img  src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/banner/5fa4e34202a0d3322522a4ab0b8cc738_73349.jpg"  alt="vinseiang" title="vinseiang"   /></a></a>
+                </li>
+                <li><a href="/board/list.php?bdId=goodsreview"><a href="https://www.facebook.com/Kenstudio-%EC%BC%84%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-107514777778721/"  target="_blank" ><img  src="https://cdn-saas-web-116-121.cdn-nhncommerce.com/ksy9204291_godomall_com/data/skin/front/ken2/img/banner/f97a8a8b82d818c4b3efcac7fc0fa389_86820.jpg"  alt="켄스튜디오" title="켄스튜디오"   /></a></a></li>
+
+
+	
+            </ul>
+	
+	</div>
+	
+	
+	</div>
+        </div>
+        <!-- //scroll_left -->
+        <!-- //좌측 스크롤 배너 -->
+
+
+        <!-- 우측 스크롤 배너 -->
+        <div id="scroll_right">
+<div class="top_bot">
+                  <p><a href="#">TOP ▲</a></p>
+                  <p><a href="#footer_wrap">END ▼</a></p>
+                </div>
+
+<script type="text/javascript">
+    // DOM 로드
+    $(function () {
+        $('.scroll_right_cont').todayGoods();
+    });
+
+    // 최근본상품 리스트 페이징 처리 플러그인
+    $.fn.todayGoods = function () {
+        // 기본값 세팅
+        var self = $(this);
+        var setting = {
+            page: 1,
+            total: 0,
+            rowno: 5
+        };
+        var element = {
+            goodsList: self.find('ul > li'),
+            closeButton: self.find('ul > li > button'),
+            prev: self.find('.scr_paging > .bnt_scroll_prev'),
+            next: self.find('.scr_paging > .bnt_scroll_next'),
+            paging: self.find('.scr_paging')
+        };
+
+        // 페이지 갯수 설정
+        setting.total = Math.ceil(element.goodsList.length / setting.rowno);
+
+        // 화면 초기화 및 갱신 (페이지 및 갯수 표기)
+        var init = function () {
+            if (setting.total == 0) {
+                setting.page = 0;
+                element.paging.hide();
+            }
+            self.find('ul').hide().eq(setting.page - 1).show();
+            self.find('.scr_paging .js_current').text(setting.page);
+            self.find('.scr_paging .js_total').text(setting.total);
+        }
+
+        // 삭제버튼 클릭
+        element.closeButton.click(function(e){
+            $.post('../goods/goods_ps.php', {
+                'mode': 'delete_today_goods',
+                'goodsNo': $(this).data('goods-no')
+            }, function (data, status) {
+                // 값이 없는 경우 성공
+                if (status == 'success' && data == '') {
+                    location.reload(true);
+                }
+                else {
+                    console.log('request fail. ajax status (' + status + ')');
+                }
+            });
+        });
+
+        // 이전버튼 클릭
+        element.prev.click(function (e) {
+            setting.page = 1 == setting.page ? setting.total : setting.page - 1;
+            init();
+        });
+
+        // 다음버튼 클릭
+        element.next.click(function (e) {
+            setting.page = setting.total == setting.page ? 1 : setting.page + 1;
+            init();
+        });
+
+        // 화면 초기화
+        init();
+    };
+</script>
+        </div>
+        <!-- //scroll_right -->
+        <!-- //우측 스크롤 배너 -->
+
+
+    </div>
+    <!-- //scroll_wrap -->
+
+
+    <!-- 퀵 검색 폼 -->
+    <!-- 퀵 검색 폼 -->
+
+</div>
+<!-- //wrap -->
+
+<!-- 쇼핑 카트 탭 -->
+
+<!-- //쇼핑 카트 탭 -->
+
+<!-- 절대! 지우지마세요 : Start -->
+<div id="layerDim" class="dn">&nbsp;</div>
+<iframe name="ifrmProcess" src='/blank.php' style="display:none" width="100%" height="0" bgcolor="#000"></iframe>
+<!-- 절대! 지우지마세요 : End -->
+
+<!-- [KS] best item 메뉴 → 최근 30일 인기상품 페이지 : start -->
+<script type="text/javascript">
+(function(){
+  var TO='/goods/populate.php?sno=1';
+  if(/[?&]cateCd=001004(&|$)/.test(location.search)){ location.replace(TO); return; }
+  function fix(){ var a=document.querySelectorAll('a[href*="cateCd=001004"]'); for(var i=0;i<a.length;i++){ a[i].setAttribute('href', TO); } }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', fix); else fix();
+  setTimeout(fix,1000); setTimeout(fix,3000);
+})();
+</script>
+<!-- [KS] best item 메뉴 → 최근 30일 인기상품 페이지 : end -->
+<!-- [KS] 인기상품 페이지 레이아웃·마우스오버 (카테고리 목록과 동일하게) : start -->
+<style>
+.sub_content .content:has(.goods_list_hot){width:100%!important;}
+.goods_list_hot,.goods_list_hot .goods_pick_list,.goods_list_hot .goods_list,.goods_list_hot .goods_list_cont,.goods_list_hot .item_gallery_type,.goods_list_hot .item_gallery_type ul{width:100%!important;}
+.goods_list_hot .item_gallery_type li{width:33.3333%!important;}
+.goods_list_hot .pick_list_num{border-bottom:0!important;}
+.goods_list_hot .item_gallery_type li .item_photo_box img{width:100%!important;max-width:500px;height:auto!important;}
+.goods_list_hot .item_photo_box a{position:relative;display:inline-block;}
+.goods_list_hot .ks-hover-img{position:absolute;top:0;left:0;width:100%!important;height:100%!important;object-fit:cover;opacity:0;transition:opacity .5s;pointer-events:none;}
+.goods_list_hot .item_photo_box:hover .ks-hover-img{opacity:1;}
+/* [KS] 타임세일 가격 빨간색 + 시계아이콘 -> OFF 알약 */
+.time_sale_cost{display:inline-block!important;background:none!important;padding-left:0!important;color:#c0392b!important}
+.time_sale_cost[data-off]::before{content:attr(data-off)}
+.item_price:has(.time_sale_cost){text-decoration:line-through}
+.time_sale_cost::before{content:'OFF';display:inline-block;font:500 9px/1 Montserrat,Arial,sans-serif;letter-spacing:.25em;color:#c0392b;border:1px solid #c0392b;border-radius:20px;padding:3px 5px 3px 7px;margin-right:8px;vertical-align:2px}
+</style>
+<script type="text/javascript">
+$(function(){
+  if(!$('.goods_list_hot').length) return;
+  $('.goods_list_hot_tit h2').text('best item');
+  function setup(){
+    $('.goods_list_hot .item_photo_box').each(function(){
+      var $b=$(this); if($b.data('ksHover')) return;
+      var a=$b.attr('data-image-add2')||''; var $i=$b.find('img').first();
+      if(!a || /noimg/.test(a) || !$i.length) return;
+      $b.data('ksHover',1);
+      var $w=$i.parent(); $w.css({position:'relative',display:'inline-block'});
+      $('<img>').attr({src:a,alt:$i.attr('alt')||''}).addClass('ks-hover-img').appendTo($w);
+    });
+  }
+  setup(); setTimeout(setup,1500);
+});
+</script>
+<!-- [KS] 인기상품 페이지 레이아웃·마우스오버 : end -->
+
+
+<!-- 외부 스크립트 -->
+<meta name="facebook-domain-verification" content="2tvk8h447kunmt3boildw2o4nh1emj" /><script>
+// 켄스튜디오 한국몰/일문몰 국기 전환 버튼 — 기준몰 · 일문몰 공통 (헤더에 국기 2개만 추가)
+(function () {
+  if (window.__klnApplied) return;
+  window.__klnApplied = true;
+
+  var SVG_JP = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">'
+    + '<rect width="36" height="24" fill="#fff"/><circle cx="18" cy="12" r="7.2" fill="#bc002d"/></svg>';
+
+  var SVG_KR = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">'
+    + '<rect width="36" height="24" fill="#fff"/>'
+    + '<g transform="translate(18,12) rotate(-33.69)">'
+    + '<circle r="6" fill="#cd2e3a"/>'
+    + '<path d="M -6,0 A 3,3 0 0 1 0,0 A 3,3 0 0 0 6,0 A 6,6 0 0 1 -6,0 Z" fill="#0047a0"/>'
+    + '</g><g fill="#000">'
+    /* 건 (좌상) */
+    + '<g transform="translate(7.5,5) rotate(-146.31)"><rect x="-2.5" y="-3" width="1" height="6"/><rect x="-.5" y="-3" width="1" height="6"/><rect x="1.5" y="-3" width="1" height="6"/></g>'
+    /* 감 (우상) */
+    + '<g transform="translate(28.5,5) rotate(-33.69)"><rect x="-2.5" y="-3" width="1" height="2.5"/><rect x="-2.5" y=".5" width="1" height="2.5"/><rect x="-.5" y="-3" width="1" height="6"/><rect x="1.5" y="-3" width="1" height="2.5"/><rect x="1.5" y=".5" width="1" height="2.5"/></g>'
+    /* 리 (좌하) */
+    + '<g transform="translate(7.5,19) rotate(146.31)"><rect x="-2.5" y="-3" width="1" height="6"/><rect x="-.5" y="-3" width="1" height="2.5"/><rect x="-.5" y=".5" width="1" height="2.5"/><rect x="1.5" y="-3" width="1" height="6"/></g>'
+    /* 곤 (우하) */
+    + '<g transform="translate(28.5,19) rotate(33.69)"><rect x="-2.5" y="-3" width="1" height="2.5"/><rect x="-2.5" y=".5" width="1" height="2.5"/><rect x="-.5" y="-3" width="1" height="2.5"/><rect x="-.5" y=".5" width="1" height="2.5"/><rect x="1.5" y="-3" width="1" height="2.5"/><rect x="1.5" y=".5" width="1" height="2.5"/></g>'
+    + '</g></svg>';
+
+  function du(s) { return 'url("data:image/svg+xml,' + encodeURIComponent(s) + '")'; }
+
+  var IS_JP = /^\/jp(\/|$)/.test(location.pathname);
+
+  // 현재 보고 있는 페이지를 반대쪽 몰의 같은 페이지로 매핑 (상품번호가 두 몰 공통)
+  function href(toJp) {
+    var rest = IS_JP ? location.pathname.replace(/^\/jp/, '') : location.pathname;
+    if (!rest || rest === '/') rest = '/main/index.php';
+    // 장바구니·주문·회원 영역은 몰별로 분리되어 있으므로 메인으로 보낸다
+    if (/^\/(order|mypage|member)\//.test(rest)) rest = '/main/index.php';
+    var q = /^\/main\/index\.php$/.test(rest) ? '' : location.search;
+    return location.origin + (toJp ? '/jp' : '') + rest + q;
+  }
+
+  function style() {
+    if (document.getElementById('kln-style')) return;
+    var st = document.createElement('style');
+    st.id = 'kln-style';
+    st.textContent =
+      '.kln-wrap{white-space:nowrap;line-height:1;font-size:0}'
+      + '.kln-f{display:inline-block;width:24px;height:16px;margin:0 2px;vertical-align:middle;'
+      + 'background-repeat:no-repeat;background-position:center;background-size:100% 100%;'
+      + 'border:1px solid rgba(0,0,0,.15);box-sizing:border-box;opacity:.35;'
+      + 'transition:opacity .15s;text-indent:-9999px;overflow:hidden}'
+      + '.kln-f:hover{opacity:.75}.kln-f.kln-on{opacity:1}'
+      + 'li.kln-m{display:table-cell;vertical-align:middle!important;padding-right:2px}li.kln-m .kln-wrap{display:inline-block;line-height:0;position:relative;top:-2px}@media (max-width:359px){li.kln-m .kln-f{width:16px;height:11px;margin:0 1px}}'
+      + '.kln-pc{margin:0 0 12px;padding:0}.kln-pc .kln-f{width:24px;height:16px;margin:0 6px 0 0}';
+    (document.head || document.documentElement).appendChild(st);
+  }
+
+  function flags() {
+    var w = document.createElement('span');
+    w.className = 'kln-wrap';
+    [['KOREA', SVG_KR, !IS_JP, false], ['JAPAN', SVG_JP, IS_JP, true]].forEach(function (f) {
+      var a = document.createElement('a');
+      a.className = 'kln-f' + (f[2] ? ' kln-on' : '');
+      a.href = href(f[3]);
+      a.title = f[0];
+      a.setAttribute('aria-label', f[0]);
+      a.style.backgroundImage = du(f[1]);
+      a.textContent = f[0];
+      w.appendChild(a);
+    });
+    return w;
+  }
+
+  function mount() {
+    if (document.querySelector('.kln-wrap')) return true;
+    style();
+    // 모바일 스킨 (thejap / the_living): 헤더 우측 메뉴 맨 앞
+    var rm = document.querySelector('header .header_box ul.right_menu');
+    if (rm) {
+      var li = document.createElement('li');
+      li.className = 'kln-m';
+      li.appendChild(flags());
+      rm.insertBefore(li, rm.firstChild);
+      return true;
+    }
+    // PC 스킨 (ken1 / ken2): 좌측 사이드바 최상단(로고 위)
+    var L = document.querySelector('#left');
+    if (L && L.firstElementChild) {
+      var d = document.createElement('div');
+      d.className = 'kln-pc';
+      d.appendChild(flags());
+      L.insertBefore(d, L.firstElementChild);
+      return true;
+    }
+    return false;
+  }
+
+  function start() {
+    if (!mount()) {
+      var n = 0, t = setInterval(function () { if (mount() || ++n > 20) clearInterval(t); }, 300);
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+
+</script><script>window.GodomallSDKConfig = {"mallInfo":{"mallDomain":"ksy9204291.godomall.com","mallNm":"\ucf04\uc2a4\ud29c\ub514\uc624","mallNmEng":"kenstudio","mallUsageStatus":{"kr":"y","us":"n","cn":"n","jp":"y"},"mallSno":1},"location":{"path":"\/goods\/goods_list.php","pathSegments":["goods","goods_list"]},"extraParams":null,"isLoggedIn":false,"memberOnlyEndpoints":["^\/member\/","^\/orders\/"]};</script>
+
+</body>
+</html>
+<script>/* [KS] 세일 할인율 자동계산 -> data-off */
+(function(){function n(t){var m=(t||'').match(/[\d,]+/);return m?parseInt(m[0].replace(/,/g,''),10):0}
+function run(){var l=document.querySelectorAll('.time_sale_cost:not([data-off])');for(var i=0;i<l.length;i++){var s=l[i],b=s.parentNode,o=n(b.firstChild&&b.firstChild.textContent),p=n(s.textContent);if(o>p&&p>0)s.setAttribute('data-off',Math.round((o-p)/o*100)+'% OFF')}}
+if(document.readyState!='loading')run();else document.addEventListener('DOMContentLoaded',run);
+var t;new MutationObserver(function(){clearTimeout(t);t=setTimeout(run,200)}).observe(document.documentElement,{childList:true,subtree:true})})();
+</script>
+<!-- [KS] 사이트 폰트: IBM Plex Sans Condensed + IBM Plex Sans KR -->
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<style>body,body *:not(i):not([class*="icon"]):not([class*="xi-"]):not([class*="fa-"]){font-family:'IBM Plex Sans Condensed','IBM Plex Sans KR','Malgun Gothic',sans-serif!important}</style>
+<style>/* [KS] 노트북(좁은 화면) 상품상세 레이아웃 + 구매버튼 스크롤 */
+/* 모든 화면 공통 */
+html body #wrap:has(.item_photo_info_sec),html body #wrap:has(.item_photo_info_sec) #container,html body #wrap:has(.item_photo_info_sec) #contents,html body #wrap:has(.item_photo_info_sec) #footer_wrap{width:auto!important;min-width:0!important}
+html body #wrap:has(.item_photo_info_sec) .sub_content{width:auto!important;margin-right:20px}
+html body #wrap:has(.item_photo_info_sec) .content_box{width:100%!important}
+html body #wrap:has(.item_photo_info_sec) .item_goods_sec{width:calc(100% - 440px)!important}
+html body #wrap:has(.item_photo_info_sec) .item_photo_info_sec{width:420px!important}
+html body #wrap:has(.item_photo_info_sec) .item_info_box{width:100%!important}
+html body #wrap:has(.item_photo_info_sec) .item_tit_detail_cont{width:420px!important;max-width:420px!important;box-sizing:border-box;padding-left:20px!important;padding-right:10px!important}
+html body #wrap:has(.item_photo_info_sec) .item_tit_detail_cont *{max-width:100%!important;box-sizing:border-box}
+html body #wrap:has(.item_photo_info_sec) .item_tit_detail_cont h3{padding-right:60px!important}
+html body #wrap:has(.item_photo_info_sec) .item_goods_sec img{max-width:100%;height:auto}
+html body #wrap:has(.item_photo_info_sec) #footer_wrap .bottom,html body #wrap:has(.item_photo_info_sec) #footer_wrap .utilMenu,html body #wrap:has(.item_photo_info_sec) #footer_wrap .utilMenu ul,html body #wrap:has(.item_photo_info_sec) #footer_wrap .shop_info{width:auto!important;max-width:100%!important;display:block}
+html body #wrap:has(.item_photo_info_sec) #footer_wrap{display:block}
+html body #wrap:has(.item_photo_info_sec) #footer_wrap .address{max-width:100%}
+html body #wrap:has(.item_photo_info_sec) div:has(> .btn_add_cart){display:flex!important;flex-wrap:wrap;gap:6px}
+html body #wrap:has(.item_photo_info_sec) .btn_add_cart,html body #wrap:has(.item_photo_info_sec) .btn_add_wish{flex:1 1 0;width:auto!important;margin:0!important}
+html body #wrap:has(.item_photo_info_sec) .btn_add_order{flex:0 0 100%;width:100%!important;margin:0!important}
+html body #wrap:has(.item_photo_info_sec) #footer_wrap{clear:both}
+html body #wrap:has(.item_photo_info_sec) .item_tit_detail_cont dl:has(>dt):has(>dd){display:flex!important;align-items:center}
+html body #wrap:has(.item_photo_info_sec) .item_tit_detail_cont dl>dt{flex:0 0 80px;float:none!important}
+html body #wrap:has(.item_photo_info_sec) .item_tit_detail_cont dl>dd{flex:1 1 auto;width:auto!important;min-width:0;float:none!important}
+html body #wrap:has(.item_photo_info_sec) .item_goods_sec img{display:block;margin-left:auto;margin-right:auto}
+.item_photo_info_sec .item_tit_detail_cont{max-height:calc(100vh - 150px);overflow-y:scroll;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#999 #e9e9e9}
+.item_photo_info_sec .item_tit_detail_cont::-webkit-scrollbar{width:6px;-webkit-appearance:none}
+.item_photo_info_sec .item_tit_detail_cont::-webkit-scrollbar-thumb{background:#bbb;border-radius:3px}
+.item_photo_info_sec .item_tit_detail_cont::-webkit-scrollbar-track{background:#f1f1f1}
+</style>
+<script>/* [KS] 카테고리 이미지 캐시 갱신(투명 PNG) - CDN 대신 원본 경로 */
+(function(){var l=document.querySelectorAll('img[src*="cateImg_goods"]');for(var i=0;i<l.length;i++){var m=l[i].src.match(/\/data\/category\/[^?]+/);if(m&&l[i].src.indexOf(location.host)<0)l[i].src=m[0]}})();
+</script>
+<style>/* [KS] 상품 이미지-가격 간격 고정(사진 박스 높이 자동) */
+.item_gallery_type .item_photo_box,.item_gallery_type .item_photo_box>a{height:auto!important}
+</style>
+<style>/* [KS] 왼쪽 메뉴 스크롤: 아래 고객센터·계좌·SNS 부분만 */
+#ks_left_bottom{clear:both;float:left;width:100%;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#bbb transparent}
+#ks_left_bottom::-webkit-scrollbar{width:4px}#ks_left_bottom::-webkit-scrollbar-thumb{background:#bbb;border-radius:4px}
+</style>
+<script>/* [KS] 왼쪽 메뉴 스크롤 - 아래 부분만 화면 높이에 맞춤 */
+(function(){function wrap(){var L=document.getElementById('left');if(!L)return null;var w=document.getElementById('ks_left_bottom');if(w)return w;var m=L.querySelector(':scope>.mall_info');if(!m)return null;w=document.createElement('div');w.id='ks_left_bottom';L.insertBefore(w,m);w.appendChild(m);var s=L.querySelector(':scope>.sns');if(s)w.appendChild(s);return w;}
+function fit(){var w=wrap();if(!w)return;var z=parseFloat(document.documentElement.style.zoom)||1;w.style.maxHeight='none';var top=w.getBoundingClientRect().top;var mh=Math.floor((window.innerHeight-top)/z-10);w.style.maxHeight=Math.max(80,mh)+'px';}
+fit();window.addEventListener('resize',fit);window.addEventListener('load',fit);})();
+</script>
+<style>/* [KS] 연관상품 컬러칩 가로 정렬 */
+html body #wrap .detail_explain_box .item_icon_box img,html body #wrap .detail_explain_box .item_icon_box img.middle{display:inline-block!important;margin:0 2px!important;width:auto!important}
+</style>
+<style>/* [KS] TOP/END 버튼 위치: 기본 오른쪽 끝, 상품상세는 구매패널 왼쪽 */
+html body .top_bot{left:auto!important;right:14px!important;margin:0!important}
+html body:has(.item_photo_info_sec) .top_bot{right:456px!important}
+</style>
+<style>/* [KS] 상품상세 하단(리뷰/Q&A) 정렬: 왼쪽 메뉴와 겹침 방지 + 표 안 아이콘 인라인 */
+html body #wrap:has(.item_photo_info_sec) .sub_content{padding-left:235px!important}
+html body #wrap .item_goods_sec table img,html body #wrap .item_goods_sec table img.middle{display:inline-block!important;margin:0 0 0 6px!important;vertical-align:middle!important;width:auto!important}
+html body #wrap:has(.item_photo_info_sec) #footer_wrap{padding-top:60px!important;padding-right:440px!important}
+html body #wrap .item_goods_sec .pagination img{display:inline!important;margin:0!important;max-width:none!important;width:auto!important}
+</style>
+<style>/* [KS] 상품상세 후기 별점 칸 숨김 */
+#reviews .reviews_table_type col:first-child,#reviews .reviews_table_type tr>th:first-child,#reviews .reviews_table_type tr>td:first-child{display:none!important}
+</style>
+<!-- [KS] RVP start -->
+<style>/* [KS] 리뷰 정책 안내 링크+팝업 */
+.ks_rvp_link{display:inline-flex;align-items:center;gap:5px;margin:6px 0 14px;font-size:12px;color:#888;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;cursor:pointer;background:none;border:0;padding:0;font-family:inherit}
+.ks_rvp_link .i{display:inline-flex;align-items:center;justify-content:center;width:13px;height:13px;border:1px solid #999;border-radius:50%;font-size:9px;font-style:normal;text-decoration:none;line-height:1}
+#ks_rvp{position:fixed;inset:0;z-index:100000;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center}
+#ks_rvp.on{display:flex}
+#ks_rvp .box{background:#fff;width:340px;max-width:calc(100vw - 32px);max-height:72vh;overflow-y:auto;padding:24px 22px;position:relative;text-align:left;box-sizing:border-box;color:#222}
+#ks_rvp h4{font-size:17px;font-weight:700;margin:0 0 18px;padding-right:24px}
+#ks_rvp h5{font-size:13px;font-weight:700;margin:18px 0 6px}
+#ks_rvp p{font-size:12.5px;line-height:1.7;color:#555;margin:0;word-break:keep-all}
+#ks_rvp .x{position:absolute;top:14px;right:14px;width:24px;height:24px;border:0;background:none;font-size:20px;line-height:1;cursor:pointer;color:#333}</style>
+<script>/* [KS] 리뷰 정책 안내 링크+팝업 */
+window.KS_RVP_MALL='켄스튜디오';window.KS_RVP_P='는';
+(function(){
+var MALL=window.KS_RVP_MALL||'켄스튜디오',P=window.KS_RVP_P||'는';
+var S=[['게시 기준',MALL+'의 상품 후기는 해당 상품을 실제로 구매한 고객(회원 및 비회원)이 작성하는 것을 원칙으로 합니다. 쇼핑몰 운영자가 작성한 글이나 외부 채널에서 수집한 후기는 별도 표시와 함께 노출됩니다.'],['게시 기간','작성된 후기는 상품 판매 종료 또는 회원 탈퇴 시까지 노출 및 보존됩니다. 다만 관계 법령에 따라 보존이 필요한 경우 해당 기간 동안 보관됩니다.'],['정렬 및 평가',MALL+P+' 별점 평가를 사용하지 않으며, 별도의 평점을 산출하지 않습니다. 후기는 기본적으로 최신 등록순으로 노출되며, 운영자가 노출 순서를 임의로 조정하지 않습니다.'],['제한 및 삭제','욕설·비방, 광고성 게시물, 상품과 무관한 내용, 음란성 콘텐츠, 허위·부정 후기, 타인의 권리를 침해하는 후기, 반복적이거나 비정상적인 후기 등 관계 법령이나 운영정책에 위반되는 후기는 노출이 제한되거나 삭제될 수 있습니다.'],['이의제기','본인이 작성한 후기의 노출 제한 또는 삭제 조치에 이의가 있는 경우, 고객센터(1:1 문의)로 접수해 주시면 검토 후 처리 결과를 안내해 드립니다.']];
+function modal(){var m=document.getElementById('ks_rvp');if(m)return m;m=document.createElement('div');m.id='ks_rvp';
+var h='<div class="box"><button type="button" class="x" aria-label="닫기">&times;</button><h4>리뷰 수집·표시 관련 안내</h4>';
+S.forEach(function(s){h+='<h5>'+s[0]+'</h5><p>'+s[1]+'</p>'});m.innerHTML=h+'</div>';
+m.addEventListener('click',function(e){if(e.target===m||e.target.className==='x')m.classList.remove('on')});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')m.classList.remove('on')});
+document.body.appendChild(m);return m}
+function mk(){var b=document.createElement('button');b.type='button';b.className='ks_rvp_link';b.innerHTML='<i class="i">i</i>리뷰 정책';b.onclick=function(){modal().classList.add('on')};return b}
+function add(){if(document.querySelector('.ks_rvp_link'))return true;var t,b;
+if(t=document.querySelector('#reviews .reviews_cont')){b=mk();var h=t.querySelector('h3');if(h)h.insertAdjacentElement('afterend',b);else t.insertBefore(b,t.firstChild);return true}
+if(t=document.querySelector('.js_board_goodsreview_view .item_list_head')){b=mk();b.style.margin='10px 0';t.insertAdjacentElement('afterend',b);return true}
+if(!/bdId=goodsreview/.test(location.search)||/view\.php|write\.php/.test(location.pathname))return false;
+if(t=document.querySelector('.board_zone_tit')){b=mk();b.style.margin='0 0 0 12px';var h2=t.querySelector('h2');if(h2){h2.style.display='inline-block';h2.insertAdjacentElement('afterend',b)}else t.appendChild(b);return true}
+if(t=document.querySelector('#boardlist')){b=mk();var w=document.createElement('div');w.style.cssText='text-align:right;padding:10px 15px 0';w.appendChild(b);b.style.margin='0';t.insertAdjacentElement('beforebegin',w);return true}
+return false}
+var n=0;(function go(){if(add()||++n>20)return;setTimeout(go,500)})();
+})();
+</script>
+<!-- [KS] RVP end -->
+<style>/* [KS] 상품목록 세로 sale 아이콘 숨김 */
+.item_photo_box .icon_time_sale{display:none!important}</style>
